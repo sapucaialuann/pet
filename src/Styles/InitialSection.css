@@ -1,0 +1,8 @@
+.homeContainer {
+ 
+  background: url('../Images/doguinho.jpg');
+  background-size: cover;
+  opacity: 0.7;
+  width: 100vw;
+  height: 425px;
+}
