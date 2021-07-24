@@ -28,6 +28,6 @@
   margin-bottom: 15px;
   margin-top: 25px;
 }
-.card p {
-  /* text-decoration-color: #fafafa; */
+.card p, .card .titleClass {
+  color: #fff;
 }
