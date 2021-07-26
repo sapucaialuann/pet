@@ -6,69 +6,65 @@ import health from '../Images/health.png';
 import petbed from '../Images/petbed.png';
 import petfriendly from '../Images/petfriendly.png';
 import pethouse from '../Images/pethouse.png';
+import GenericPage from '../Pages/GenericPage';
 
 
 export default function InitialSection() {
   return(
     <div className="homeContainer middleSection">
-      <CardGroup className="cardGroupMiddle" style={{width: '80rem'}}>
-          <Card >
+      <CardGroup className="cardGroupMiddle" style={{width: '70rem'}}>
+          <Card onClick={GenericPage()} value='1' name='passeador'>
             <Card.Img variant="top" src={dog} />
             <Card.Body>
             <Button variant="primary">
-              <Card.Title className="titleClass">Card Title</Card.Title>
+              <Card.Title className="titleClass">Encontre um passeador</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build
               </Card.Text>
               
               </Button>
             </Card.Body>
           </Card>
-          <Card >
+          <Card onClick={GenericPage()} value='2' name='Denúncia'>
             <Card.Img variant="top" src={health} />
             <Card.Body>
             <Button variant="danger">
-              <Card.Title className="titleClass">Card Title</Card.Title>
+              <Card.Title className="titleClass">Denúncia</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build
               </Card.Text>
               </Button>
             </Card.Body>
           </Card>
-          <Card >
+          <Card onClick={GenericPage()} value='3' name='Loja'>
             <Card.Img variant="top" src={petbed} />
             <Card.Body>
             <Button variant="success">
-              <Card.Title className="titleClass">Card Title</Card.Title>
+              <Card.Title className="titleClass">Loja</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build
               </Card.Text>
               </Button>
             </Card.Body>
           </Card>
-          <Card >
+          <Card onClick={GenericPage()} value='4' name='hotel'>
             <Card.Img variant="top" src={petfriendly} />
             <Card.Body>
             <Button variant="warning">
-              <Card.Title className="titleClass">Card Title</Card.Title>
+              <Card.Title className="titleClass">Reserve um hotel</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build
               </Card.Text>
               </Button>
             </Card.Body>
           </Card>
-          <Card >
+          <Card onClick={GenericPage()} value='5' name='Adote'>
             <Card.Img variant="top" src={pethouse} />
             <Card.Body>
             <Button variant="info">
               <Card.Title className="titleClass">Adote um animal</Card.Title>
               <Card.Text>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                Some quick example text to build
               </Card.Text>
               </Button>
             </Card.Body>
