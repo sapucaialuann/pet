@@ -1,5 +1,4 @@
-import Header from '../Components/Header';
-import InitialSection from '../Sections/InitialSection';
+
 import '../Styles/Home.css';
 
 //here this function will be responsible for calling the other react components. Each card will have a value that will be passed as a parameter to the main function.
@@ -9,8 +8,7 @@ import '../Styles/Home.css';
 export default function Home() {
   return (
     <>
-      <Header />
-      <InitialSection />
+      
     </>
   );
 }
