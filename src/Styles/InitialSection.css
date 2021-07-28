@@ -1,0 +1,33 @@
+.homeContainer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('../Images/doguinho.jpg');
+  background-size: cover;
+  opacity: 0.7;
+  height: calc(100vh - 65px);
+}
+
+.card-group .card {
+  transition: .3s;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.card-group .card:hover {
+  background-color: #cdcdcd;
+  transition: .3s;
+}
+
+.card img {
+  height: 70px;
+  width: 70px;
+  align-self: center;
+  margin-bottom: 15px;
+  margin-top: 25px;
+}
+
+.card p, .card .titleClass {
+  color: #fff;
+}
