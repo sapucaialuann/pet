@@ -13,6 +13,8 @@
     "bootstrap": "5.0.2",
     "firebase": "^8.8.0",
     "material-ui": "^0.20.2",
+    // added node module due to heroku
+    "node": "^14.17.3",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.0-beta.4",
     "react-dom": "^17.0.2",
