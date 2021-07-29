@@ -3,10 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  useRouteMatch
 } from 'react-router-dom';
 import Adoption from '../Pages/Adoption';
-import Home from '../Pages/Home';
 import Walk from '../Pages/Walk';
 import Login from '../Pages/Login';
 import InitialSection from '../Sections/InitialSection';
