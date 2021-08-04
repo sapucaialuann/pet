@@ -4,16 +4,18 @@ import '../Styles/GenericCardComponent.css';;
 
 
 export default function GenericCardComponent(props) {
+    //the logic should be adapted for each type of action. Therefore, it's important to connect to the application to this.
     return (
-        <Card name='passeador' className='genericCardComponent'>
-            <Card.Img variant="top" src={props.animalImg} />
+        <Card className='genericCardComponent'>
+            <Card.Img variant="top" src={props.imgSrc} />
             <Card.Body>
-                <Card.Title className="titleClass">{props.animalName}</Card.Title>
+                <Card.Title className="titleClass">{props.componentName}</Card.Title>
                 <Card.Text>
-                    {props.animalDescription}
+                    {props.componentDescription}
                 </Card.Text>
                 <Button variant="primary">
-                    <p>Adote {props.animalName}!</p>
+                    {/* it is important to add logic in this part as well so the button can also be different for each page!! */}
+                    <p>{props.componentName}!</p>
                 </Button>
             </Card.Body>
         </Card>

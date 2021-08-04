@@ -1,10 +1,10 @@
 import React from 'react';
 import '../Styles/Home.css';
 
-export default function Report() {
+export default function Home() {
   return (
     <>
-        <h1>REPORT</h1>
     </>
   );
 }
+

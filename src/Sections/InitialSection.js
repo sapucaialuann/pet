@@ -16,7 +16,7 @@ export default function InitialSection() {
 
 
         <Card name='passeador'>
-          <Link to='walk'>
+          <Link className='link-from-card' to='walk'>
           <Card.Img variant="top" src={dog} />
           <Card.Body>
             <Button variant="primary">
@@ -31,7 +31,7 @@ export default function InitialSection() {
 
 
           <Card name='Adote'>
-          <Link to='Adoption'>
+          <Link to='adoption' className='link-from-card'>
             <Card.Img variant="top" src={pethouse} />
             <Card.Body>
             <Button variant="info">
@@ -45,8 +45,23 @@ export default function InitialSection() {
           </Card>
 
 
+          <Card name='hotel'>
+          <Link to='accomodation' className='link-from-card'>
+            <Card.Img variant="top" src={petfriendly} />
+            <Card.Body>
+            <Button variant="warning">
+              <Card.Title className="titleClass">Reserve um hotel</Card.Title>
+              <Card.Text>
+                Some quick example text to build
+              </Card.Text>
+              </Button>
+            </Card.Body>
+            </Link>
+          </Card>
+
+
           <Card name='Denúncia'>
-          <Link to='reports'>
+          <Link to='reports' className='link-from-card'>
             <Card.Img variant="top" src={health} />
             <Card.Body>
             <Button variant="danger">
@@ -72,18 +87,6 @@ export default function InitialSection() {
             </Card.Body>
           </Card>
 
-
-          <Card name='hotel'>
-            <Card.Img variant="top" src={petfriendly} />
-            <Card.Body>
-            <Button variant="warning">
-              <Card.Title className="titleClass">Reserve um hotel</Card.Title>
-              <Card.Text>
-                Some quick example text to build
-              </Card.Text>
-              </Button>
-            </Card.Body>
-          </Card>
 
 
         </CardGroup>

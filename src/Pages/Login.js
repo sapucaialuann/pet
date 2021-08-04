@@ -2,6 +2,10 @@ import React from 'react';
 
 export default function Login() {
     return(
-        <h1>LOGIN CARAIO!!!!!!</h1>
+        <div>
+            <form>
+                <input type='text' >teste</input>
+            </form>
+        </div>
     )
 }

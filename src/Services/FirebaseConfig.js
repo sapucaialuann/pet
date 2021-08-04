@@ -1,7 +1,8 @@
 import { useAuthState } from 'react-firebase-hooks/auth';
+import { useList } from 'react-firebase-hooks/database';
 
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-export const firebaseConfig = {
+
+const firebaseConfig = {
   apiKey: "AIzaSyDZrIUvcxNtfcWBHqjqSG0sv8fKr06og_s",
   authDomain: "pets-trabgdp.firebaseapp.com",
   databaseURL: "https://pets-trabgdp-default-rtdb.firebaseio.com",
@@ -14,15 +15,8 @@ export const firebaseConfig = {
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
-  
-  
-  
-  // <!-- The core Firebase JS SDK is always required and must be listed first -->
-  // <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-  
-  // <!-- TODO: Add SDKs for Firebase products that you want to use
-  //      https://firebase.google.com/docs/web/setup#available-libraries -->
-  // <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
-  
-  //   // Your web app's Firebase configuration
-  //   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+  //will be necessary to use one const for each list of Object? I believe so
+  const [apiDogsAdoption, loadingDogs, errorDogs] = useList(firebase.database().ref);
+  const [apiAccomodation, loadingAccomodation, errorAccomodation] = useList(firebase.database().ref);
+  const [apiWalk, loadingWalk, errorWalk] = useList(firebase.database().ref);
