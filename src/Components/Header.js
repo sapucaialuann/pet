@@ -4,8 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+// import IconButton from '@material-ui/core/IconButton';
+// import MenuIcon from '@material-ui/icons/Menu';
 import HeaderMenu from './HeaderMenu';
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ return (
       </Link>
     </Typography>
     <Button color="inherit">
-      <Link to='/Login' >Login</Link>
+      <Link exact to='/login' >Login</Link>
     </Button>
   </Toolbar>
 </AppBar>

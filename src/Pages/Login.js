@@ -1,11 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     return(
-        <div>
-            <form>
-                <input type='text' >teste</input>
-            </form>
-        </div>
+        <Link to='/'>HOME</Link>
     )
 }

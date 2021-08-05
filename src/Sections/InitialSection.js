@@ -9,14 +9,16 @@ import pethouse from '../Images/pethouse.png';
 import {Link} from 'react-router-dom';
 
 
-export default function InitialSection() {
+export default function InitialSection(props) {
+
+  
   return(
     <div className="homeContainer middleSection">
       <CardGroup className="cardGroupMiddle" style={{width: '70rem'}}>
 
 
         <Card name='passeador'>
-          <Link className='link-from-card' to='walk'>
+          <Link to='/walk' className='link-from-card'>
           <Card.Img variant="top" src={dog} />
           <Card.Body>
             <Button variant="primary">
@@ -31,7 +33,7 @@ export default function InitialSection() {
 
 
           <Card name='Adote'>
-          <Link to='adoption' className='link-from-card'>
+          <Link to='/adoption' className='link-from-card'>
             <Card.Img variant="top" src={pethouse} />
             <Card.Body>
             <Button variant="info">
@@ -46,7 +48,7 @@ export default function InitialSection() {
 
 
           <Card name='hotel'>
-          <Link to='accomodation' className='link-from-card'>
+          <Link to='/accomodation' className='link-from-card'>
             <Card.Img variant="top" src={petfriendly} />
             <Card.Body>
             <Button variant="warning">
@@ -61,7 +63,7 @@ export default function InitialSection() {
 
 
           <Card name='Denúncia'>
-          <Link to='reports' className='link-from-card'>
+          <Link to='/reports' className='link-from-card'>
             <Card.Img variant="top" src={health} />
             <Card.Body>
             <Button variant="danger">
