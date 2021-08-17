@@ -10,7 +10,7 @@ import { FirebaseDatabaseNode } from "@react-firebase/database";
 export default function Walk() {
     const DatabaseList = () => {
         const [snapshots, loading, error] = useList(CRUDfirebase.getAll());
-
+        console.log
 
         // https://github.com/bezkoder/react-firebase-hooks/blob/master/src/firebase.js CONTINUAR ESTE TUTORIAL PARA IMPLEMENTAR A LÓGICA DO BANCO DO FIREBASE!!!
 
