@@ -1,15 +1,22 @@
 import React from "react";
-// import GenericCardComponent from "../Components/GenericCardComponent";
+import { useList } from 'react-firebase-hooks/database';
+import CRUDfirebase from '../Services/CRUDfirebase';
+import { FirebaseDatabaseNode } from "@react-firebase/database";
+
+
 // import dog from '../Images/dog.png';
-import {useList} from 'react-firebase-hooks/database'
+// import GenericCardComponent from "../Components/GenericCardComponent";
 
 export default function Walk() {
-
     const DatabaseList = () => {
-        const [snapshots, loading, error] = useList(firebase.database().ref('list'));
+        const [snapshots, loading, error] = useList(CRUDfirebase.getAll());
+
+
+        // https://github.com/bezkoder/react-firebase-hooks/blob/master/src/firebase.js CONTINUAR ESTE TUTORIAL PARA IMPLEMENTAR A LÓGICA DO BANCO DO FIREBASE!!!
+
     
         return(
-            <>
+            <FirebaseDatabaseNode>
                 {/* <GenericCardComponent componentName='Fulano de tal' componentDescription='Um cara que gosta de andar' imgSrc={dog} image/> */}
 
                 {error && <strong>Error: {error}</strong>}
@@ -23,7 +30,7 @@ export default function Walk() {
                         ))}
                     </ul>
                 )}
-            </>
+            </FirebaseDatabaseNode>
         );
     };
     return DatabaseList();
