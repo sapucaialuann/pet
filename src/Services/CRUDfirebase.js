@@ -14,7 +14,7 @@ const db = firebase.ref("/hotel");
 
 
 
-const getAll = () => {
+const getAll = async () => {
     return db;
 };
 
