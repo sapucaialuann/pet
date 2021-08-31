@@ -14,8 +14,8 @@ export default function GenericCardComponent(props) {
                     {props.componentDescription}
                 </Card.Text>
                 <Button variant="primary">
+                    <p>{props.componentButtonName}</p>
                     {/* it is important to add logic in this part as well so the button can also be different for each page!! */}
-                    <p>{props.componentName}!</p>
                 </Button>
             </Card.Body>
         </Card>

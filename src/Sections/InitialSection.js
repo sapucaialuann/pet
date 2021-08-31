@@ -7,10 +7,12 @@ import petbed from '../Images/petbed.png';
 import petfriendly from '../Images/petfriendly.png';
 import pethouse from '../Images/pethouse.png';
 import {Link} from 'react-router-dom';
+import { getDataFromFirebase } from '../Services/firebaseOperations';
 
 
 export default function InitialSection(props) {
-
+  const testData = getDataFromFirebase('passeio')
+  console.log(testData);
   
   return(
     <div className="homeContainer middleSection">
@@ -21,7 +23,7 @@ export default function InitialSection(props) {
           <Link to='/walk' className='link-from-card'>
           <Card.Img variant="top" src={dog} />
           <Card.Body>
-            <Button variant="primary">
+            <Button variant="primary" onClick={()=> testData()}>
               <Card.Title className="titleClass">Encontre um passeador</Card.Title>
               <Card.Text>
                 Some quick example text to build

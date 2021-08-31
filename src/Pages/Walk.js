@@ -1,14 +1,24 @@
-// import dog from '../Images/dog.png';
-// import GenericCardComponent from "../Components/GenericCardComponent";
-
-import React, { useState, useEffect } from "react";
-import { useList, useObject } from 'react-firebase-hooks/database';
-import CRUDfirebase from '../Services/CRUDfirebase';
-import { FirebaseDatabaseNode } from "@react-firebase/database";
-import Hotel from '../classes/Hotel';
+import dog from '../Images/dog.png';
+import GenericCardComponent from "../Components/GenericCardComponent";
+import { insertIntoFirebase, getDataFromFirebase } from "../Services/firebaseOperations";
+import React from "react";
 export default function Walk() {    
+    const objectToPush = {
+        nome: 'teste do push nesse caramba - o retorno'
+    }
     return(
-        <FirebaseDatabaseNode>
-        </FirebaseDatabaseNode>
-    );
+        <>
+            <ul>
+
+                <GenericCardComponent 
+                    componentButtonName={'Pegar lista de passeios'} 
+                    componentName='bilubilu' 
+                    componentDescription='um cachorrinho bem legal.' 
+                    imgSrc={dog}
+                />
+                <button onClick={() =>insertIntoFirebase('passeio', objectToPush)}>me clica, vai</button>
+            </ul>
+        </>
+        
+        );
 };
