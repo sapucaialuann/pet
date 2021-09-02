@@ -92,7 +92,6 @@ export default function InitialSection(props) {
           </Card>
 
 
-
         </CardGroup>
     </div>
   )
